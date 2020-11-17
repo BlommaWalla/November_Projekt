@@ -1,4 +1,5 @@
 ﻿using System;
+using Raylib_cs;
 
 namespace MLG_RPG_DVD_For_People_With_ADD
 {
@@ -6,7 +7,21 @@ namespace MLG_RPG_DVD_For_People_With_ADD
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Wallah");
+            Raylib.InitWindow(300, 300, "DVD");
+            Raylib.ToggleFullscreen();
+
+            Raylib.ClearBackground(color Color);
+
+
+            while (!Raylib.WindowShouldClose())
+            {
+                Raylib.BeginDrawing();
+                
+
+
+
+                Raylib.EndDrawing();
+            }
         }
     }
 }
